@@ -1,6 +1,7 @@
 import React from "react";
 import Articles from "./Articles";
 import $ from "jquery";
+import { findRenderedDOMComponentWithTag } from "react-dom/test-utils";
 
 export default class Novels extends React.Component {
 
@@ -18,10 +19,13 @@ export default class Novels extends React.Component {
         };
     }
 
-    async getFeeds() {
+     getFeeds() {
         var tmpPosts = [];
         var expectedLength = this.state.links.length;
         for (let i = 0; i < expectedLength; i++) {
+            let chapters = fetch("https://feed.jquery-plugins.net/load?url=" + this.state.links[i] + "&maxCount=2&ShowDesc=false");
+            tmpPosts.push(chapters);
+            /*
             $.ajax({
                 dataType: "json",
                 url: "https://feed.jquery-plugins.net/load?url=" + this.state.links[i] + "&maxCount=2&ShowDesc=false",
@@ -31,15 +35,18 @@ export default class Novels extends React.Component {
                     }
                 }
             });
+            */
+           
         }
         return tmpPosts;
     }
 
-
     render() {
-        const arr = this.getFeeds();
-        console.log(arr);
-        
+        // this.getFeeds().then(links => {console.log(links)})
+        Promise.all(this.getFeeds())
+        .then(links => {return links[0].json()})
+        .then(chapter => console.log(chapter))
+
         return (
             <div className="novelsMain">
                 <h4>Novels</h4>
