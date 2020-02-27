@@ -1,20 +1,20 @@
 import React from "react";
-import Articles from "./Articles";
+import novelArticles from "./novelArticles";
 
 class Novels extends React.Component {
-    
-    
-
     render() {
-        // this.getFeeds().then(links => {console.log(links)})
-        
-        
-
+        var yeet = [];
+        yeet.push(this.props.novs.map((item, i) => {
+            return <div>
+                <a key={i} href={item.link}>{item.title}</a>
+                <p>{item.date}</p>
+                </div>
+        }))
         return (
             <div className="novelsMain">
-                <h4>yo</h4>
-                
-                <Articles />
+                <h4>Novels</h4>
+                {yeet}
+                <novelArticles />
             </div>
         );
     }
