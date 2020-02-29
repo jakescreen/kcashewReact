@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Novels from "./components/Novels"
-import Twitch from "./components/Twitch";
+import Novels from "./Components/Novels"
+import Twitch from "./Components/Twitch";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';

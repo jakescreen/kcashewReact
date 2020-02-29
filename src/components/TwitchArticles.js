@@ -1,5 +1,4 @@
-import React from "react";
-import ReactTwitchEmbedVideo from "react-twitch-embed-video";
+import React from "./node_modules/react";
 
 export default class TwitchArticles extends React.Component {
     constructor(props) {
