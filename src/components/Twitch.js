@@ -1,13 +1,14 @@
 import React from "react";
 import TwitchArticles from "./TwitchArticles";
 
+
 export default class Twitch extends React.Component {
     state = {
         users: []
     }
     
     "https://api.twitch.tv/helix/streams?user_login="
-    UNSAFE_componentWillMount() {
+    componentDidMount() {
         let url = "https://api.twitch.tv/helix/users/follows?from_id=455825055"
         let usrs = [];
         fetch(url, {
@@ -50,6 +51,8 @@ export default class Twitch extends React.Component {
         return (
             <div className="twitchMain">
                 <h4>Twitch</h4>
+                <div id="twitch-embed"></div>
+                
                 <TwitchArticles usrs={this.state.users}/>
             </div>
 

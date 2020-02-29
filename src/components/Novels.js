@@ -12,7 +12,7 @@ class Novels extends React.Component {
         posts: []
     };
     //loads novel posts into the state on load
-    UNSAFE_componentWillMount() {
+    componentDidMount() {
         var tmpPosts = []; //array to return of posts
         var expectedLength = this.state.links.length; //how many links to fetch
         for (let i = 0; i < expectedLength; i++) {
