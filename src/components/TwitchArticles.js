@@ -29,7 +29,7 @@ export default class TwitchArticles extends React.Component {
         //pushes props into array on relaod and displays, emptying on rerender
         yeet.push(this.props.usrs.map((item, i) => {
             return <div className="post" key={i}>
-                <h4>{item.name}</h4>
+                <h5>{item.name}</h5>
                 <p>{item.title}</p>
                 <button id="1" onClick={(e) => this.handleClick1(e, item.name)}>Stream 1</button>
                 <button id="2" onClick={(e) => this.handleClick2(e, item.name)}>Stream 2</button>
