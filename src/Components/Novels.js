@@ -1,4 +1,4 @@
-import React from "./node_modules/react";
+import React from 'react';
 import NovelArticles from "./NovelArticles";
 class Novels extends React.Component {
     //contains links to webnovels and their latest 2 posts
