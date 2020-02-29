@@ -38,8 +38,8 @@ export default class TwitchArticles extends React.Component {
         return (
             <div>
                 {yeet}
-                <iframe id={"embed_" + this.state.channel1}  src={"http://player.twitch.tv/?muted=true&channel=" + this.state.channel1} className="stream" allowFullScreen={true} width="700px" height="400px"></iframe>
-                <iframe id={"embed_" + this.state.channel2}  src={"http://player.twitch.tv/?muted=true&channel=" + this.state.channel2} className="stream" allowFullScreen={true} width="700px" height="400px"></iframe>
+                <iframe id={"embed_" + this.state.channel1}  src={"https://player.twitch.tv/?muted=true&channel=" + this.state.channel1} className="stream" allowFullScreen={true} width="700px" height="400px"></iframe>
+                <iframe id={"embed_" + this.state.channel2}  src={"https://player.twitch.tv/?muted=true&channel=" + this.state.channel2} className="stream" allowFullScreen={true} width="700px" height="400px"></iframe>
             </div>
 
         );
