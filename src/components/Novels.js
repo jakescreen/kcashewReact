@@ -1,5 +1,5 @@
 import React from "react";
-import NovelArticles from "./NovelArticles";
+import NovelArticles from "./NovelArticles.js";
 class Novels extends React.Component {
     //contains links to webnovels and their latest 2 posts
     state = {
