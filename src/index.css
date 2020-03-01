@@ -15,7 +15,20 @@ code {
 }
 
 #root{
+  background: rgb(238,174,202);
+background: linear-gradient(155deg, rgba(238,174,202,1) 0%, rgba(148,215,233,1) 100%);
+}
+
+html{
   padding-top: 70px;
   background: rgb(238,174,202);
 background: linear-gradient(155deg, rgba(238,174,202,1) 0%, rgba(148,215,233,1) 100%);
+}
+
+.content-main{
+  text-align: center;
+}
+
+.nav-link{
+ padding-left: 20vw !important;
 }
