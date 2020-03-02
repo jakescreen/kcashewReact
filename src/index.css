@@ -28,7 +28,6 @@ background: linear-gradient(155deg, rgba(238,174,202,1) 0%, rgba(148,215,233,1) 
   text-align: center;
 }
 
-.nav-link{
- padding-left: 20vw !important;
- display: flex;
+.mr-auto{
+  
 }
