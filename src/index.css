@@ -27,7 +27,9 @@ background: linear-gradient(155deg, rgba(238,174,202,1) 0%, rgba(148,215,233,1) 
 .content-main{
   text-align: center;
 }
-
-.mr-auto{
+.stream{
+  height: 50vh;
+  width: 50vw;
   
 }
+
