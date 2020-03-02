@@ -33,3 +33,9 @@ background: linear-gradient(155deg, rgba(238,174,202,1) 0%, rgba(148,215,233,1) 
   
 }
 
+@media only screen and (max-width: 1000px){
+  .stream{
+    width: 100vw;
+    height: 50vh;
+  }
+}
